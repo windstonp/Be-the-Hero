@@ -5,8 +5,8 @@ exports.up = function(knex) {
     table.string('title').notNullable();
     table.string('descriptions').notNullable();
     table.decimal('value').notNullable();
-    table.string('NPO_id').notNullable();
-    table.foreign('NPO_id').references('id').inTable('NPO');
+    table.string('NGO_id').notNullable();
+    table.foreign('NGO_id').references('id').inTable('NGO');
   });
 };
 

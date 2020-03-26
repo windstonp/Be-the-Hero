@@ -1,6 +1,6 @@
 
 exports.up = function(knex) {
-  return knex.schema.createTable('NPO',function (table){
+  return knex.schema.createTable('NGO',function (table){
     table.string('id').primary();
     table.string('name').notNullable();
     table.string('email').notNullable();
@@ -11,5 +11,5 @@ exports.up = function(knex) {
 };
 
 exports.down = function(knex) {
-  return knex.schema.dropTable('NPO');
+  return knex.schema.dropTable('NGO');
 };
