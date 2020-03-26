@@ -10,10 +10,27 @@
   justify-content: center;
 }
 .container-404 p{
-  font-size: 18px;
+  font-size: 28px;
   color: #41414D;
   line-height: 32px;
+  margin-top: 60px;
+}
+.container-404 p span{
+  color: #e02041;
+  font-weight: 700;
+
 }
 .container-404 img{
-  width: 600px;
+  width: 700px;
+}
+.container-404 .logo-404{
+  position: relative;
+  top: -50px;
+  width: 200px;
+}
+.container-404-art{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
