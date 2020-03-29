@@ -1,6 +1,4 @@
-<h1 align="center">
-Be-the-Hero
-<h1>
+#be the hero.
 
 #Sumary
 1.[About the project](#about)
