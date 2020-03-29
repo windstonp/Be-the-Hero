@@ -21,7 +21,7 @@ This project was developed for help people to solve their problem and help their
 First a person registers his NGO on the site and posts his case with a reward for the Hero who will complete it (web).
 <br>
 Then a Hero will be able to see a list of cases available on the mobile app, then he can choose a case to participate and after he chooses one, he will contact the NGO by e-mail or by their WhatsApp number that was available(mobile).
-<br>
+<br> 
 After that the hero and the NGO will discuss how they can help each other to solve the case :)
 
 # 📜 List of function developed <a name="Road-map"></a>
