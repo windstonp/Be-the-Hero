@@ -3,16 +3,16 @@
 </h1>
 
 # Sumary
-1.[About the project](#about).
-2.[Road map of what have been done during the week](#Road-map).
-3.[Extra funcitons added](#extra).
-4.[Install the project](#install).
-5.[How to start the project](#Start).
-  1.[Back-end](#backend).
-  2.[Front-end](#front-end).
-  3.[Mobile](#mobile).
-  4.[If expo was not initalizated](#expo).
-6.[License](#license).
+1. [About the project](#about).
+2. [Road map of what have been done during the week](#Road-map).
+3. [Extra funcitons added](#extra).
+4. [Install the project](#install).
+5. [How to start the project](#Start).
+  1. [Back-end](#backend).
+  2. [Front-end](#front-end).
+  3. [Mobile](#mobile).
+  4. [If expo was not initalizated](#expo).
+6. [License](#license).
 
 # 📁About the project.<a name="about"></a>
 <br>
