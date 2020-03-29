@@ -1,6 +1,8 @@
-#be the hero.
+<h1 align="center">
+  Be the hero
+</h1>
 
-#Sumary
+# Sumary
 1.[About the project](#about)
 2.[Road map of what have been done during the week](#Road-map)
 3.[Extra funcitons added](#extra)
@@ -12,14 +14,14 @@
   4.[If expo was not initalizated](#expo)
 6.[License](#license)
 
-#📁About the project.<a name="about"></a>
+# 📁About the project.<a name="about"></a>
 <br>
 This project was developed for help people to solve their problem and help their communities, creating an NGO (non-governamental organization) on the website and posting their cases there, so how will it work?
 First a person registers his NGO on the site and posts his case with a reward for the Hero who will complete it (web).
 Then a Hero will be able to see a list of cases available on the mobile app, then he can choose a case to participate and after he chooses one, he will contact the NGO by e-mail or by their WhatsApp number that was available(mobile).
 After that the hero and the NGO will discuss how they can help each other to solve the case :) .
 
-#📜 List of function developed <a name="Road-map"></a>
+# 📜 List of function developed <a name="Road-map"></a>
 
 ##Day One.
 
@@ -33,7 +35,7 @@ After that the hero and the NGO will discuss how they can help each other to sol
 - [x]Create project with React.js.
 - [x]Understanding the React Native and Expo.
 
-##Day Two.
+## Day Two.
 
 - [x] Node.js and Express.
   - [x] Routes and Resources.
@@ -48,4 +50,4 @@ After that the hero and the NGO will discuss how they can help each other to sol
 - [x] Adding cors module.
 - [x] Sending Back-end to github.
 
-##Day Three.
+## Day Three.
