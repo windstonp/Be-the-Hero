@@ -23,7 +23,8 @@
   max-width: 380px;
 
 }
-.register-container .content section h1{
+.register-container .content section h1,
+.mobile-title{
   padding: 64px 0 32px;
   font-size: 32px;
 }
@@ -47,4 +48,31 @@
 .register-container .content form .inputGroup input + input{
   margin-left: 8px;
   
+}
+.mobile-title{
+  display: none;
+}
+.back-link-mobile{
+  display: none !important;
+}
+@media (max-width: 768px){
+  .infos{
+    display: none;
+  }
+  .mobile-title{
+    display: flex;
+    margin-top: 5px;
+    padding: 0 0 32px;
+  }
+  .register-container .content{
+    flex-direction: column;
+  }
+  .back-link-mobile{
+    display: flex !important;
+  }
+  .register-container .content{
+    margin: 0;
+    padding: 0 15px;
+    width: 100%;
+  }
 }

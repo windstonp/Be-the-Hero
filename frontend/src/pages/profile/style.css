@@ -72,3 +72,33 @@
   line-height: 21px;
   font-size: 16px;
 }
+@media (max-width: 768px){
+  .profile-container header span{
+    display: none;
+  }
+  .profile-container header img {
+    margin-right: 50px;
+  }
+}
+@media (max-width: 425px){
+  .profile-container header span{
+    display: none;
+    
+  }
+  header{
+    flex-direction: column;
+  }
+  .profile-container header button{
+    margin-top: 15px;
+    width: 260px;
+    margin-left: 0;
+    box-shadow: 0 0 5px 0px #e02041 ;
+  }
+  .profile-container header a{
+    margin: 0;
+    margin-top: 25px;
+  }
+  .profile-container ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -40,7 +40,7 @@ export default function NewIncident(){
   return (
     <div className="new-incident-container">
       <div className="content">
-        <section>
+        <section className="infos">
           <img src={HeroLogo} alt="Be The Hero"/>
           <h1>Register a new case</h1>
           <p>Register your case for a Hero help you to solve it</p>
@@ -49,6 +49,7 @@ export default function NewIncident(){
             Return to the homepage.
           </Link>
         </section>
+        <h1 className='mobile-title'>Register a new case</h1>
         <form onSubmit={CreateIncident}>
           <input 
             placeholder="Case Tittle"
@@ -74,6 +75,10 @@ export default function NewIncident(){
             </p>
           </div>
         </form>
+        <Link className="back-link-mobile" to="/profile">
+          <FiArrowLeft size={16} color='#e02041' />
+          Return to the homepage.
+        </Link>
       </div>
     </div>
   );

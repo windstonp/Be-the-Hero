@@ -120,7 +120,7 @@ After that the hero and the NGO will discuss how they can help each other to sol
 
 - [x] Page 404 (web) ✔️. 
 - [ ] Create a loading Effect with Skeleton effect (web) ❌. 
-- [ ] Responsivity (web) ❌.
+- [x] Responsivity (web) ✔️.
 - [ ] Validate Login and Incidents (back-end) ❌.
 - [ ] Create a input mask with react-input-mask (web) ❌.
 - [ ] do the remaining tests ❌ (Back-End).

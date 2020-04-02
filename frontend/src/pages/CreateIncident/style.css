@@ -40,3 +40,24 @@
 .new-incident-container .content form textarea{
   margin-top: 8px;
 }
+@media (max-width: 768px){
+  .infos{
+    display: none;
+  }
+  .mobile-title{
+    display: flex;
+    margin-top: 5px;
+    padding: 0 0 32px;
+  }
+  .new-incident-container .content{
+    flex-direction: column;
+  }
+  .back-link-mobile{
+    display: flex !important;
+  }
+  .new-incident-container .content{
+    margin: 0;
+    padding: 0 15px;
+    width: 100%;
+  }
+}

@@ -19,3 +19,19 @@
   font-size: 32px;
   margin-bottom: 32px;
 }
+@media (max-width: 768px){
+  .logon-container{
+    justify-content: center;
+    align-items: center;
+  }
+  .logon-container section.form{
+    margin-top: 25px;
+    margin-left: 30px;
+  }
+  .logon-container section.form form{
+    margin-top: 50px;
+  }
+  .Hero-Img{
+    display: none;
+  }
+}

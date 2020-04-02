@@ -53,7 +53,8 @@ form textarea{
 .button:hover{
   filter: brightness(90%);
 }
-.back-Link{
+.back-Link,
+.back-link-mobile{
   display: flex;
   align-items: center;
   margin-top: 48px;

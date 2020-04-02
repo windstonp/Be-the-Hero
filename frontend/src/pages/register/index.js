@@ -37,7 +37,7 @@ export default function Register(){
   return(
     <div className="register-container">
       <div className="content">
-        <section>
+        <section className='infos'>
           <img src={HeroLogo} alt="Be The Hero"/>
           <h1>Sign-Up</h1>
           <p>Sign Up and Log in to help other people to find your NGO's case</p>
@@ -46,6 +46,7 @@ export default function Register(){
             Already have a account? Log-In
           </Link>
         </section>
+        <h1 className='mobile-title'>Sign-Up</h1>
         <form onSubmit={handleRegister}>
           <input 
             placeholder = "Name of the NGO"
@@ -84,6 +85,10 @@ export default function Register(){
             </p>
           </div>
         </form>
+        <Link className="back-link-mobile" to="/">
+          <FiArrowLeft size={16} color='#e02041' />
+          Already have a account? Log-In
+        </Link>
       </div>
     </div>
   );
