@@ -1,0 +1,19 @@
+.Container{
+  width: 100%;
+  max-width: 1180px;
+}
+.skeleton-group{
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px -8px #000;
+  position: relative;
+}
+.Item-Header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.Item-value{
+  margin-top: 16px;
+}

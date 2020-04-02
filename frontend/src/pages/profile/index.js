@@ -2,22 +2,29 @@ import React, {useEffect, useState} from "react";
 import {Link,useHistory} from 'react-router-dom';
 import {FiPower,FiTrash2} from 'react-icons/fi';
 import HeroLogo from '../../assets/logo.svg';
-import Api from '../../services/api';
 import './style.css';
 import api from "../../services/api";
+import ComponentSkeleton from "../../components/SkeletonComponent";
 export default function Profile(){
   const NGO_name = localStorage.getItem('name');
   const NGO_id = localStorage.getItem('id');
   const [Incidents,SetIncidents] = useState([]);
+  const [Loading,SetLoading] = useState(true);
   const History = useHistory();
   useEffect(()=>{
-    Api.get('/profile',{
-      headers: {authorization: NGO_id},
-    }).then(response=>{
-      SetIncidents(response.data);
-    });
-  },[NGO_id])
-
+    const Timeout = setTimeout(()=>{
+      api.get('/profile',
+      {
+        headers: {authorization: NGO_id}
+      }).then(response=>{
+        SetIncidents(response.data);
+        console.log(response.data);
+      });
+      SetLoading(false);
+      
+    },4000);
+    return ()=> clearTimeout(Timeout);
+  },[NGO_id]);
   async function handleDeleteIncident(id){
     try{
       await api.delete(`/incidents/${id}`,{
@@ -48,22 +55,27 @@ export default function Profile(){
       <h1>
         Registered Cases
       </h1>
-      <ul>
-        {Incidents.map(Incident=>
-          (
-            <li key={Incident.id}>
-              <strong>CASE:</strong>
-              <p>{Incident.title}</p>
-              <strong>Description:</strong>
-              <p>{Incident.descriptions}</p>
-              <strong>Reward Value:</strong>
-              <p>{Intl.NumberFormat('eng',{style: 'currency',currency: 'USD'}).format(Incident.value)}</p>
-              <button type='button' onClick={()=>handleDeleteIncident(Incident.id)}>
-              <FiTrash2 size={20} color='#e02041'/>
-              </button>
-            </li>
-          ))}
-      </ul>
+
+        {Loading && <ComponentSkeleton />}
+        {!Loading &&
+          <ul>
+          {Incidents.map(Incident=>
+            (
+              <li key={Incident.id}>
+                <strong>CASE:</strong>
+                <p>{Incident.title}</p>
+                <strong>Description:</strong>
+                <p>{Incident.descriptions}</p>
+                <strong>Reward Value:</strong>
+                <p>{Intl.NumberFormat('eng',{style: 'currency',currency: 'USD'}).format(Incident.value)}</p>
+                <button type='button' onClick={()=>handleDeleteIncident(Incident.id)}>
+                <FiTrash2 size={20} color='#e02041'/>
+                </button>
+              </li>
+            ))}
+          </ul>
+        }
+            
     </div>
   );
 }

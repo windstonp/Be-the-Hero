@@ -119,7 +119,7 @@ After that the hero and the NGO will discuss how they can help each other to sol
 # 📑 Extra functions Added. <a name="extra"></a>
 
 - [x] Page 404 (web) ✔️. 
-- [ ] Create a loading Effect with Skeleton effect (web) ❌. 
+- [x] Create a loading Effect with Skeleton effect (web) ✔️. 
 - [x] Responsivity (web) ✔️.
 - [ ] Validate Login and Incidents (back-end) ❌.
 - [ ] Create a input mask with react-input-mask (web) ❌.
