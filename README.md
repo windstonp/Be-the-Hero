@@ -11,7 +11,7 @@
     1. [Back-end](#backend).
     2. [Front-end](#frontend).
     3. [Mobile](#mobile).
-    4. [If expo was not initalizated](#expo).
+    4. [If expo was not initialized](#expo).
 6. [License](#license).
 
 # 📁 About the project.<a name="about"></a>
@@ -203,7 +203,7 @@ cd mobile
 Expo start
 ```
 
-## ☠️ If expo was not initalizated <a name="expo"></a>
+## ☠️ If expo was not initialized <a name="expo"></a>
 
 If the expo was not initialized you may not have the ```expo-cli``` on your computer so to install it you need to run this command.
 
