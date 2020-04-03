@@ -2,6 +2,7 @@ import React,{useEffect,useState} from 'react';
 import {Feather} from '@expo/vector-icons';
 import {View,FlatList,Text,Image,TouchableOpacity} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
+import SkeletonIncident from '../../Components/SkeletonIncident';
 import Api from "../../services/api";
 import logoImg from '../../assets/logo.png';
 import style from './styles';
@@ -11,6 +12,7 @@ export default function Incidents(){
   const [TotalItems,SetTotalItems] = useState(0);
   const [page,SetPage] = useState(1);
   const [Loading, SetLoading] = useState(false);
+  const [InitialLoading,SetInitial]= useState(true);
   async function LoadIncidents(){
     if(Loading){
       return;
@@ -19,14 +21,17 @@ export default function Incidents(){
       return;
     }
     SetLoading(true);
-    const response = await Api.get(`/incidents`,{params:{page}})
+    const response = await Api.get(`/incidents`,{params:{page}});
     SetIncidents([... incidents, ... response.data]);
     SetTotalItems(response.headers['x-total-count']);
     SetPage(page + 1);
     SetLoading(false);
-  }
+    SetInitial(false);
+  } 
   useEffect(()=>{
-    LoadIncidents();
+    setTimeout(()=>{
+      LoadIncidents();
+    },3000);
   },[]);
   function NavigateToDetail(incident){
     navigation.navigate('Detail',{incident});
@@ -45,6 +50,8 @@ export default function Incidents(){
         <Text style={style.description}>
           Select one of the cases and save the day. 
         </Text>
+        {InitialLoading && <SkeletonIncident/>}
+        {!InitialLoading &&
         <FlatList
           style={style.incidentList}
           data={incidents}
@@ -75,6 +82,7 @@ export default function Incidents(){
             </View>
           )}
         />
+      }
       </View>
   );
 } 

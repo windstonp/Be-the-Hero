@@ -125,7 +125,7 @@ After that the hero and the NGO will discuss how they can help each other to sol
 - [ ] Create a input mask with react-input-mask (web) ❌.
 - [ ] do the remaining tests ❌ (Back-End).
 - [ ] Do the Tests (Front-End and Mobile) ❌.
-- [ ] loading effect with skeleton effect and loading at the end of the list (mobile) ❌.
+- [x] loading effect with ReactContentLoader (mobile) ✔️.
 
 # 📂 Install the Project. <a name="install"></a>
 
